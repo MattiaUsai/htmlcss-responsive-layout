@@ -27,6 +27,9 @@
 .bg-yellow{
     background-color:lightblue;
 }
+.bg-gray{
+    background-color: gray;
+}
 
 
 
@@ -68,9 +71,30 @@ header .menu-desk{
     margin: 20px 0;
   
 }
+/* INIZIO TESTIMONIALS */
+.testimonials .col{
+    
+    width: 100%;
+    margin: 20px 0;
+}
+.testimonials-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 
-
-
+.testimonials-img{
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+}
+.testimonials-text{
+    height: 150px;
+    width: 100%;
+    margin: 30px 0;
+}
 
 
 
@@ -86,6 +110,10 @@ header .menu-desk{
     }
     .jumbotron .col.first-col{
         width: calc(100%/3 *2 - 20px);
+    }
+    /* TESTIMONIALS TABLET */
+    .testimonials-text{
+        width: 70%;
     }
 
 
@@ -128,5 +156,9 @@ header .menu-desk{
         width: calc(100%/2 - 20px);
         
         margin: 10px;
+    }
+    /* TESTIMONIALS DESKTOP */
+    .testimonials-text{
+        width: 70%;
     }
 }
