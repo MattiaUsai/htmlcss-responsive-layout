@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    
+    width: 100%;
+    background-color: aqua;
+
+}
+.row{
+    width: 100%;
+    display: flex;
+
+}
+/* CLASSI LAYOUT */
+.border{
+    border: 1px solid black;
+}
+
+
+
+
+/* INIZIO HEADER */
+header .col{
+    width: 50%;
+    height: 50px;
+    background-color: yellow;
+}
+
+.header-content{
+    height: 50px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+}
+
+.header-menu{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
