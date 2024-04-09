@@ -39,7 +39,9 @@ header .col{
    padding: 10px;
     
 }
-
+header .menu-desk{
+    display: none;
+}
 .header-content{
    
     display: flex;
@@ -47,10 +49,8 @@ header .col{
 }
 
 .header-menu{
-   
     display: flex;
     justify-content: flex-end;
-    
 }
 
 
@@ -68,6 +68,14 @@ header .col{
     margin: 20px 0;
   
 }
+
+
+
+
+
+
+
+
 /* VERSIONE TABLET  */
 @media screen and (min-width:480px) {
 
@@ -84,17 +92,28 @@ header .col{
     
 }
 
+
+
+
+
+
 /* VERSIONE DESKTOP */
 @media screen and (min-width:768px ) {
 
     .container{
         max-width: 1200px;
     }
-
-
-
-
-
+    /* HEADER VERSIONE DESKTOP */
+    header .menu-desk{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between ;
+        width: 100%;
+    }
+    header .menu-burger{
+        display: none;
+    }
+    
     /* JUMBOTRON VERSIONE DESKTOP  */
     .jumbotron .col{
         width: calc(100%/3 - 20px);
