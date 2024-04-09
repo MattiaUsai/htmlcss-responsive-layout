@@ -5,7 +5,7 @@
 }
 .container{
     
-    width: 95%;
+    width: 90%;
     
     margin: auto;
 
@@ -54,25 +54,60 @@ header .col{
 }
 
 
-
 /* INIZIO JUMBOTRON */
 .jumbotron .col{
     width: 100%;
-    margin: 10px ;
+    margin: 20px 0;
     height: 300px;
 }
 
-
-
-
-
-@media screen and (min-width:480px ) {
+/* INIZIO PLANNING */
+.planning .col{
+    height: 400px;
+    width: 100%;
+    margin: 20px 0;
+  
+}
+/* VERSIONE TABLET  */
+@media screen and (min-width:480px) {
 
     /* JUMBOTRON VERSIONE TABLET  */
     .jumbotron .col{
-        width: calc(100%/3 - 20px)
+        width: calc(100%/3 - 20px);
+        margin: 10px;
     }
     .jumbotron .col.first-col{
-        width: calc(100%/3 *2 - 20px)
+        width: calc(100%/3 *2 - 20px);
+    }
+
+
+    
+}
+
+/* VERSIONE DESKTOP */
+@media screen and (min-width:768px ) {
+
+    .container{
+        max-width: 1200px;
+    }
+
+
+
+
+
+    /* JUMBOTRON VERSIONE DESKTOP  */
+    .jumbotron .col{
+        width: calc(100%/3 - 20px);
+        margin: 10px;
+    }
+    .jumbotron .col.first-col{
+        width: calc(100%/3 *2 - 20px);
+    }
+
+    /* PLANNING VERSIONE DESKTOP  */
+    .planning .col{
+        width: calc(100%/2 - 20px);
+        
+        margin: 10px;
     }
 }
