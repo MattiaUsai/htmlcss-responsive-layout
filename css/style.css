@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
     
     width: 90%;
@@ -47,8 +51,8 @@ header .col{
 }
 header .menu-desk{
     display: none;
-    display: flex;
-    align-items: center;
+    
+    
 }
 .header-content{
    
@@ -73,16 +77,83 @@ li button {
 .jumbotron .col{
     width: 100%;
     margin: 20px 0;
-    height: 300px;
+    
+}
+.jumbotron .img-phone{
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
 }
 
+.jumbotron-text{
+    text-align: start;
+}
+.jumbotron-content{
+    text-align: center;
+    line-height: 2;
+    padding: 20px;
+}
+
+.jumbotron-content h2{
+    color: #0084FD;
+    margin: 10px 0;
+
+}
+.jumbotron .symbols{
+    color: #0084FD;;
+    height: 80px;
+    width: 80px;
+}
+.jumbotron button{
+    background-color: #0084FD;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 70px;
+}
 /* INIZIO PLANNING */
+.planning{
+    background-color: #9791DE;
+    padding-bottom: 50px;
+}
 .planning .col{
-    height: 400px;
+    
     width: 100%;
     margin: 20px 0;
   
 }
+.planning  img{
+    width: 100%;
+}
+.app-dev img{
+    width: 100%;
+    max-width: 250px;
+}
+.planning .app-dev{
+    margin: auto;
+    padding: 20px;
+    max-width: 300px;
+    background-color: #fff;
+    text-align: center;
+}
+.strategic h2{
+    margin: 30px 0;
+}
+.app-dev h2{
+    margin:20px 0
+}
+.strategic{
+    color: #fff;
+}
+.app-dev button{
+    margin-top: 30px;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #9791DE;
+    color: white;
+    border-radius: 100%;
+}
+
 
 /* INIZIO TESTIMONIALS */
 .testimonials .col{
@@ -173,6 +244,14 @@ li button {
     }
     .jumbotron .col.first-col{
         width: calc(100%/3 *2 - 20px);
+        align-items: flex-end;
+        display: flex;
+        
+    }
+    .first-col .jumbotron-content{
+        display: flex;
+        align-items:flex-end;
+        
     }
 
     /* PLANNING VERSIONE DESKTOP  */
@@ -180,6 +259,9 @@ li button {
         width: calc(100%/2 - 20px);
         
         margin: 10px;
+    }
+    .planning .row{
+        align-items: flex-end;
     }
     /* TESTIMONIALS DESKTOP */
     .testimonials-text{
